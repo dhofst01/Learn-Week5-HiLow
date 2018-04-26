@@ -1,0 +1,15 @@
+ <%-# Store Value in a cookie -%>
+  game<%= cookies[:secretnumber] %>
+ <%-# Output number entered -%>
+Number Entered is: <%= params[:guess] %>
+<%= @result_string %>
+
+<hr/>
+<hr/>
+
+</hr/>
+</hr/>
+<form action="/game" method="get">
+  <input type ="number" name="guess" min="1" max="100" required/>
+  <input type="Submit" name="submit" value="submit number" />
+</form>
